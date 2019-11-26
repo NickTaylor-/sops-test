@@ -1,0 +1,14 @@
+name: Test extracting secrets from a PR
+on: [push]
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    env:
+      GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.GCP_SERVICE_ACCOUNT }}
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - run: echo $GOOGLE_APPLICATION_CREDENTIALS | base64 -d
