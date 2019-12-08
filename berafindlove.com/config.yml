@@ -12,5 +12,5 @@ domains:
 
   test_vcs_deploy:
     type: CNAME
-    value: www
+    value: www.google.com
     ttl: 3600
