@@ -9,3 +9,8 @@ domains:
     type: A
     value: 1.2.3.4
     ttl: 3600
+
+  test_vcs_deploy:
+    type: CNAME
+    value: www
+    ttl: 3600
