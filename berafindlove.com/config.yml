@@ -1,0 +1,11 @@
+zone_id: 876e7c3d1ac57b0956d4fe7b9ff7d93a
+domains:
+  www:
+    type: A
+    value: 1.1.1.1
+    ttl: 3600
+
+  www2:
+    type: A
+    value: 1.2.3.4
+    ttl: 3600
